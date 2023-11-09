@@ -1,0 +1,4 @@
+lex.yy.c
+puppet_parser
+puppet_parser.tab.c
+puppet_parser.tab.h
