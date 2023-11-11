@@ -1,10 +1,10 @@
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -Wall -g
 LDFLAGS = -lfl
 
 all: puppet_parser
 
-puppet_parser: puppet_parser.tab.c lex.yy.c main.c
+puppet_parser: puppet_parser.tab.c lex.yy.c main.c puppet_mnemonic.c
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 puppet_parser.tab.c: puppet_parser.y

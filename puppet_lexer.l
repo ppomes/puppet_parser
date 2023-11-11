@@ -1,4 +1,5 @@
 %{
+#include "puppet_mnemonic.h"
 #include "puppet_parser.tab.h"
 %}
 
