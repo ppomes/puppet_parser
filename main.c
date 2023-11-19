@@ -8,6 +8,7 @@
 
 extern FILE *yyin;  // Declare the global yyin variable
 extern int yylineno;
+extern void yylex_destroy();
 
 
 int yyerror(const char *s) {

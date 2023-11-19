@@ -4,6 +4,7 @@
 %}
 
 %option yylineno
+%option noyywrap
 
 %%
 "node"          { return TOK_NODE; }

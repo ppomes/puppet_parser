@@ -1,8 +1,12 @@
 %{
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "puppet_mnemonic.h"
+
+extern int yylex(void);
+extern void yyerror(const char *s);
 
 char current_node[256];
 
